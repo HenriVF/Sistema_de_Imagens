@@ -1,0 +1,12 @@
+CREATE DATABASE sistema_imagens;
+
+
+USE sistema_imagens;
+
+
+CREATE TABLE imagens(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_imagem VARCHAR(255) NOT NULL,
+    imagem LONGBLOB NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );

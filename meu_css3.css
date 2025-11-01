@@ -1,0 +1,161 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header img{
+    height: 60px;
+    margin-right: 20px;
+}
+header .info,
+header .texto-header{
+    flex: 1;
+    font-size: 1rem;
+}
+/* Botões */
+button, .right-button{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+button:hover, .right-button:hover{
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+.right-button{
+    background-color: #0b5ed7;
+}
+.right-button:hover{
+    background-color: #ccc;
+}
+/* Link dos botões */
+.right-button a{
+    text-decoration: none;
+    color: white;
+}
+/* Conteudo principal */
+main, section{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+h2, h3{
+    color: #0d6efd;
+    margin-bottom: 25px;
+}
+hr{
+    width: 80%;
+    border: 1px solid #ddd;
+    margin:10px auto 30px auto;
+}
+/*  Opções de formatação  */
+.form-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+.form-block, form{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.form-block:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+/* Rodapé */
+footer{
+    background: black;
+    color: #ccc;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+/* Responsivo */
+@media(max-width: 600px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    header img{
+        margin-bottom: 10px;
+    }
+    .form-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Mensagem */
+.mensagem{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+/* Grid de imagens */
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.image-card{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.image-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+.image-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+.image-info{
+    padding: 15px;
+    text-align: left;
+}
+.image-info h4{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #0d6efd;
+}
+.image-info p{
+    font-size: 0.9em;
+    color: #666;
+}
